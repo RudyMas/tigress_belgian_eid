@@ -1,0 +1,12 @@
+{
+  "name": "belgian-eid",
+  "description": "Tigress Belgian eID library",
+  "private": true,
+  "scripts": {
+    "web-eid-setup": "node tools/copy-web-eid.mjs"
+  },
+  "dependencies": {
+    "@web-eid/web-eid-library": "2.1.0",
+    "web-eid": "^0.0.8"
+  }
+}

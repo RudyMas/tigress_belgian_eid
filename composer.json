@@ -1,0 +1,27 @@
+{
+  "name": "tigress/belgian-eid",
+  "description": "Tigress Belgian eID library",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Rudy Mas",
+      "email": "rudy.mas@rudymas.be",
+      "homepage": "https://www.rudymas.be",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.5"
+  },
+  "require-dev": {
+    "tigress/core": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tigress\\": "src/",
+      "Controller\\": "src/controllers/"
+    }
+  }
+}

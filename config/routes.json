@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "request": "POST",
+      "path": "/belgian-eid/signing/prepare",
+      "controller": "BelgianEidSignerController",
+      "method": "prepareSigning"
+    },
+    {
+      "request": "POST",
+      "path": "/belgian-eid/signing/finalize",
+      "controller": "BelgianEidSignerController",
+      "method": "finalizeSigning"
+    }
+  ]
+}
