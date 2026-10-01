@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document ondertekenen</title>
+    <title>{{ __('Signing document') }}</title>
     <link rel="stylesheet" href="{{ BASE_URL }}/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="{{ BASE_URL }}/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script>
@@ -20,19 +20,19 @@
         <div class="col-12">
             <div class="card shadow-sm">
                 <div class="card-header">
-                    <strong>Document ondertekenen</strong>
+                    <strong>{{ __('Signing document') }}</strong>
                 </div>
                 <div class="card-body">
-                    <p>Controleer het onderstaande document voordat u het digitaal ondertekent met uw Belgische eID.</p>
+                    <p>{{ __('Check the document below before digitally signing it with your Belgian eID.') }}</p>
                     <iframe src="{{ pdfUrl }}"
                             style="width: 100%; height: calc(100vh - 220px); border: 1px solid #dee2e6;"
-                            title="Document om te ondertekenen"></iframe>
+                            title="{{ __('Document to be signed') }}"></iframe>
                 </div>
                 <div class="card-footer text-end">
                     <a href="{{ cancelUrl }}" class="btn btn-danger"><i
-                                class="fa-solid fa-xmark"></i> Annuleren</a>
+                                class="fa-solid fa-xmark"></i> {{ __('Cancel') }}</a>
                     <button type="button" class="btn btn-primary" id="btnSign"><i
-                                class="fa-solid fa-file-signature"></i> Ondertekenen met eID
+                                class="fa-solid fa-file-signature"></i> {{ __('Sign with eID') }}
                     </button>
                 </div>
             </div>

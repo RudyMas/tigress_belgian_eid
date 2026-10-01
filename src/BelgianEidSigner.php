@@ -60,6 +60,7 @@ class BelgianEidSigner
     public function __construct()
     {
         TWIG->addPath('vendor/tigress/belgian-eid/src/views');
+        TRANSLATIONS->load(SYSTEM_ROOT . '/vendor/tigress/belgian-eid/translations/translations.json');
     }
 
     /**

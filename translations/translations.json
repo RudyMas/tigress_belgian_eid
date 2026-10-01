@@ -1,0 +1,38 @@
+{
+  "nl": {
+    "Check the document below before digitally signing it with your Belgian eID.": "Controleer het onderstaande document voordat u het digitaal ondertekent met uw Belgische eID.",
+    "Document to be signed": "Document dat moet worden ondertekend",
+    "Sign with eID": "Onderteken met eID",
+    "Signing document": "Document ondertekenen"
+  },
+  "fr": {
+    "Check the document below before digitally signing it with your Belgian eID.": "Vérifiez le document ci-dessous avant de le signer numériquement avec votre eID belge.",
+    "Document to be signed": "Document à signer",
+    "Sign with eID": "Signer avec eID",
+    "Signing document": "Signature du document"
+  },
+  "de": {
+    "Check the document below before digitally signing it with your Belgian eID.": "Überprüfen Sie das untenstehende Dokument, bevor Sie es mit Ihrem belgischen eID digital signieren.",
+    "Document to be signed": "Dokument zu unterzeichnen",
+    "Sign with eID": "Mit eID unterschreiben",
+    "Signing document": "Dokument wird unterschrieben"
+  },
+  "es": {
+    "Check the document below before digitally signing it with your Belgian eID.": "Revise el documento a continuación antes de firmarlo digitalmente con su eID belga.",
+    "Document to be signed": "Documento a firmar",
+    "Sign with eID": "Firmar con eID",
+    "Signing document": "Firmando documento"
+  },
+  "it": {
+    "Check the document below before digitally signing it with your Belgian eID.": "Controlla il documento qui sotto prima di firmarlo digitalmente con il tuo eID belga.",
+    "Document to be signed": "Documento da firmare",
+    "Sign with eID": "Firma con eID",
+    "Signing document": "Firma del documento"
+  },
+  "sv": {
+    "Check the document below before digitally signing it with your Belgian eID.": "Kontrollera dokumentet nedan innan du digitalt signerar det med ditt belgiska eID.",
+    "Document to be signed": "Dokument som ska undertecknas",
+    "Sign with eID": "Signera med eID",
+    "Signing document": "Signerande dokument"
+  }
+}
