@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document ondertekenen</title>
+    <link rel="stylesheet" href="{{ BASE_URL }}/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="{{ BASE_URL }}/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script>
+        const SIGNING = {
+            jobId: {{ jobId|json_encode|raw }},
+        };
+    </script>
+    <script type="module"
+            src="{{ BASE_URL }}/vendor/tigress/belgian-eid/public/javascript/belgian_eid_signer.js"></script>
+</head>
+<body class="bg-light">
+<div class="container-fluid py-3">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <strong>Document ondertekenen</strong>
+                </div>
+                <div class="card-body">
+                    <p>Controleer het onderstaande document voordat u het digitaal ondertekent met uw Belgische eID.</p>
+                    <iframe src="{{ pdfUrl }}"
+                            style="width: 100%; height: calc(100vh - 220px); border: 1px solid #dee2e6;"
+                            title="Document om te ondertekenen"></iframe>
+                </div>
+                <div class="card-footer text-end">
+                    <a href="{{ cancelUrl }}" class="btn btn-danger"><i
+                                class="fa-solid fa-xmark"></i> Annuleren</a>
+                    <button type="button" class="btn btn-primary" id="btnSign"><i
+                                class="fa-solid fa-file-signature"></i> Ondertekenen met eID
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

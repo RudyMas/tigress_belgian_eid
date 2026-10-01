@@ -8,6 +8,7 @@ use Exception;
 use InvalidArgumentException;
 use JetBrains\PhpStorm\ArrayShape;
 use RuntimeException;
+use Twig\Error\LoaderError;
 
 /**
  * Belgian eID PDF signer. (PHP version 8.5)
@@ -51,6 +52,14 @@ class BelgianEidSigner
     public static function version(): string
     {
         return '2026.09.25';
+    }
+
+    /**
+     * @throws LoaderError
+     */
+    public function __construct()
+    {
+        TWIG->addPath('vendor/tigress/belgian-eid/src/views');
     }
 
     /**
